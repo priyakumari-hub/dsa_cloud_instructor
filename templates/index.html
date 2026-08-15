@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cloud & DSA AI Instructor</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+<div class="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">
+                ☁️
+            </div>
+
+            <div class="logo-text">
+
+                <h2>
+                    Cloud & DSA
+                </h2>
+
+                <p>
+                    AI Instructor
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="new-chat"
+            onclick="newChat()">
+
+            ＋ New Conversation
+
+        </button>
+
+
+        <div class="side-title">
+            Topics
+        </div>
+
+
+        <div
+            class="topic"
+            onclick="useSuggestion('Explain Cloud Computing in simple words')">
+
+            ☁️ Cloud Computing
+
+        </div>
+
+
+        <div
+            class="topic"
+            onclick="useSuggestion('Explain Data Structures in simple words')">
+
+            🧩 Data Structures
+
+        </div>
+
+
+        <div
+            class="topic"
+            onclick="useSuggestion('Explain algorithms with a simple example')">
+
+            ⚡ Algorithms
+
+        </div>
+
+
+        <div
+            class="topic"
+            onclick="useSuggestion('Explain time complexity in simple words')">
+
+            📊 Complexity
+
+        </div>
+
+
+        <div
+            class="topic"
+            onclick="useSuggestion('Explain binary search with an example')">
+
+            🔎 Problem Solving
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="status">
+
+                <span class="status-dot"></span>
+
+                Instructor Online
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+
+            <div class="instructor">
+
+
+                <div class="avatar">
+                    👨‍🏫
+                </div>
+
+
+                <div class="instructor-info">
+
+                    <h3>
+                        Cloud & DSA Instructor
+                    </h3>
+
+                    <p>
+
+                        <span class="online">
+                            ●
+                        </span>
+
+                        Ready to teach
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+        <!-- CHAT AREA -->
+
+        <section
+            class="chat-area"
+            id="chatArea">
+
+
+            <div
+                class="welcome"
+                id="welcome">
+
+
+                <div class="welcome-icon">
+                    🧠
+                </div>
+
+
+                <h1>
+                    Learn Cloud & DSA
+                </h1>
+
+
+                <p>
+
+                    Ask me questions related to
+                    Cloud Computing, Data Structures
+                    and Algorithms. I'll explain concepts
+                    in a simple and beginner-friendly way.
+
+                </p>
+
+
+                <div class="suggestions">
+
+
+                    <button
+                        class="suggestion"
+                        onclick="useSuggestion('What is Cloud Computing?')">
+
+                        What is Cloud Computing?
+
+                    </button>
+
+
+                    <button
+                        class="suggestion"
+                        onclick="useSuggestion('What is a Stack in DSA?')">
+
+                        What is Stack?
+
+                    </button>
+
+
+                    <button
+                        class="suggestion"
+                        onclick="useSuggestion('Explain time complexity')">
+
+                        Time Complexity
+
+                    </button>
+
+
+                    <button
+                        class="suggestion"
+                        onclick="useSuggestion('Explain binary search')">
+
+                        Binary Search
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- INPUT -->
+
+        <section class="input-section">
+
+
+            <div class="input-box">
+
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask a Cloud or DSA question..."
+                    autocomplete="off"
+                >
+
+
+                <button
+                    class="send-btn"
+                    id="sendBtn"
+                    onclick="sendMessage()">
+
+                    ➤
+
+                </button>
+
+
+            </div>
+
+
+            <div class="input-note">
+
+                Ask questions related to
+                Cloud Computing, Data Structures & Algorithms
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+
+</html>
