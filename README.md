@@ -25,23 +25,23 @@ The application uses the **Google Gemini API** for AI-generated responses, **Fla
 
 ## 🛠️ Technologies Used
 
-### Frontend
+## Frontend
 
 - HTML5
 - CSS3
 - JavaScript
 
-### Backend
+## Backend
 
 - Python
 - Flask
 
-### AI
+## AI
 
 - Google Gemini API
 - Google GenAI Python SDK
 
-### Other Technologies
+## Other Technologies
 
 - REST API
 - JSON
@@ -118,7 +118,7 @@ instructor. Please ask something related to my field.
 
 ## ⚙️ Installation
 
- 1. Clone the Repository
+# 1. Clone the Repository
 
 ```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
@@ -132,7 +132,7 @@ cd Cloud-DSA-Instructor
 
 ---
 
-2. Create a Virtual Environment
+# 2. Create a Virtual Environment
 
 On Windows:
 
@@ -148,7 +148,7 @@ venv\Scripts\activate
 
 ---
 
- 3. Install Dependencies
+# 3. Install Dependencies
 
 Install the required Python packages:
 
@@ -158,7 +158,7 @@ pip install -r requirements.txt
 
 ---
 
-4. Configure the Gemini API Key
+#4. Configure the Gemini API Key
 
 Create a `.env` file in the project root:
 
